@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contenido/CSS/cobertura.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>INTERFLASH-WIFINET | COBERTURA</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d3d90bb349.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="icon" href="contenido/Imagenes/Logos Wiifinet/icono.png">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+</head>
+
+<body>
+    <div id="content" class="hidden">
+        <a href="https://api.whatsapp.com/send?phone=51981563202&text=%C2%A1Hola%21%20Me%20interesa%20contratar%20el%20servicio%20de%20Internet%20de%20WIFINET" class="btn_wsp" target="_blank">Contactanos <i class="fa-brands fa-whatsapp"></i></a>
+        <div class="fondo">
+            <div class="degradado">
+                <header>
+                    <div class="logo"><a href="index.html"><img src="contenido/Imagenes/Logos Wiifinet/interflaswifinet.png"
+                                alt=""></a></div>
+                    <input type="checkbox" id="nav_chek" hidden>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" class="">Inicio</a></li>
+                            <li><a href="index.html#Planes" class="">Planes</a></li>
+                            <li><a href="cobertura.html" class="active">Cobertura</a></li>
+                            <li><a href="formas_pago.html" class="">Formas de Pago</a></li>
+                            <li><a href="contacto.html">Contactanos</a></li>
+                            <li><a href="galeria.html">Galeria</a></li>
+                            <li><a href="plantillas.html">Plantillas</a></li>
+                        </ul>
+                    </nav>
+                    <label for="nav_chek" class="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </label>
+                </header>
+                <div class="contenido">
+                    <h1 class="t1">Conéctate Sin Límites</h1>
+                    <h3 class="t2">Velocidad y estabilidad en cada el rincon del Perú.</h3>
+                    <div class="mapa">
+                        <img src="contenido/Imagenes/mapa/MAPA PERU .png" alt="">
+                    </div>
+                    <div class="botones">
+                        <button type="button" class="boton2" onclick="desplazar()">UNETE AHORA</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="separador">
+            <div></div>
+        </div>
+        <main>
+        </main>
+    </div>
+    </div>
+    </div>
+    <div class="bodyy">
+        <h1 class="t3">Nuentra Cobertura</h1>
+        <h3 class="t4">Lugares en donde nos encontramos</h3>
+    </div>
+    <!-- map -->
+    <div class="coberturas">
+        <select class="cobertura" name="select-cobertura" id="select-cobertura">
+            <option value="-1">SELECCIONE EL LUGAR</option>
+            <option value="-6.4863532, -79.6550368">BATANGRANDE</option>
+            <option value="-6.666483, -79.718721">EL CARRIZO</option>
+            <option value="-6.6345728,-79.7882495">FERREÑAFE</option>
+            <option value="-6.596680, -79.840066">LAS LOMAS</option>
+            <option value="-6.6581851,-79.7550322">MAMAPE</option>
+            <option value="-6.6448801,-79.737017">MESONES MURO</option>
+            <option value="-6.5492702,-79.8639646">MOCHUMI</option>
+            <option value="-6.5649893,-79.7790911">PITIPO</option>
+            <option value="-6.594350, -79.878325">PUNTO CUATRO</option>
+            <option value="-6.594858, -79.847791">SAN ROQUE</option>
+        </select>
+    </div>
+
+    <div class="map" id="map">
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="contenido/CapasMaps/ferreñafe.js"></script>
+        <script src="contenido/CapasMaps/batangrande.js"></script>
+        <script src="contenido/Java Scrip/cobertura.js"></script>
+    </div>
+    <div class="separador">
+        <div></div>
+    </div>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="index.html">
+                        <img src="contenido/Imagenes/Logos Wiifinet/interflaswifinet.png" alt="Logo pagina">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, vitae?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, vitae?</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa-brands fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-instagram"></a>
+                    <a href="https://wa.me/51981563202" class="fa-brands fa-whatsapp"></a>
+                    <a href="https://maps.app.goo.gl/xjPL2nZkJtReriB78" class="fa-solid fa-location-dot"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>INTERFLASH|WIFINET</b> - Todos los Derechos </small>
+        </div>
+    </footer>
+</body>
+
+</html>
